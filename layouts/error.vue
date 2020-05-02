@@ -1,15 +1,13 @@
-<template>
-  <v-app dark>
-    <h1 v-if="error.statusCode === 404">
-      {{ pageNotFound }}
-    </h1>
-    <h1 v-else>
-      {{ otherError }}
-    </h1>
-    <NuxtLink to="/">
-      Home page
-    </NuxtLink>
-  </v-app>
+<template lang="pug">
+v-container
+
+  v-alert.text-center(v-if='error.statusCode === 404' type='error')
+    h1 {{ pageNotFound }}
+  v-alert.text-center(v-else type='warning')
+    h1 {{ otherError }}
+  nuxt-link.float-right(to='/home')
+    | Retour à l'accueil
+
 </template>
 
 <script>
@@ -23,8 +21,8 @@ export default {
   },
   data() {
     return {
-      pageNotFound: '404 Not Found',
-      otherError: 'An error occurred'
+      pageNotFound: '404 - Page non trouvée',
+      otherError: 'Une erreur st survenue'
     }
   },
   head() {

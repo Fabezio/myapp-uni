@@ -37,3 +37,8 @@ export default {
   }
 }
 </script>
+
+<style lang="stylus" scoped>
+a
+  text-decoration none
+</style>

@@ -10,6 +10,7 @@ v-app(app)
 export default {}
 </script>
 
-<style lang="stylus" scoped>
-//
+<style lang="stylus">
+a
+  text-decoration none
 </style>
