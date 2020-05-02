@@ -1,6 +1,6 @@
 <template lang="pug">
 div
-  h1 Bienvenue!
+  Title(label='Bienvenue!')
 </template>
 
 <script>

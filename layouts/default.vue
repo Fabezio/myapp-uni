@@ -1,8 +1,11 @@
 <template lang="pug">
 v-app
   Navbar
-  v-container
-    nuxt
+  v-content
+    v-container(fill-height fluid)
+      v-row
+        v-col
+          nuxt
   Footer
 
 </template>

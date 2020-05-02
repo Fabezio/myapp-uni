@@ -1,5 +1,5 @@
 <template lang="pug">
-v-footer.fixed-bottom
+v-footer(absolute)
   #footer.bg-info.py-2.text-light
     span.font-weight-bold.pr-1 fabezio
     span.pr-1 &copy;

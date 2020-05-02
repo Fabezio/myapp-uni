@@ -1,5 +1,6 @@
 <template lang="pug">
-h1.display-4.mb-4 {{label}}
+h1.display-4.my-4.text-center
+  | {{label}}
 </template>
 <script>
 export default {

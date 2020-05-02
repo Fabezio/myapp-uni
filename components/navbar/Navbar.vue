@@ -1,5 +1,8 @@
 <template lang="pug">
-v-app-bar
+v-app-bar(app dark dense)
+  v-toolbar(flat dense padless)
+    v-toolbar-title Fabezio
+
 
 
 </template>
