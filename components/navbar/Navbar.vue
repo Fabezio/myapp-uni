@@ -4,7 +4,7 @@ v-app-bar(app dark flat tile)
     Brand(label='Fabezio')
     //- v-spacer
     Navlinks
-    Navlinks(url='skills', label='Compétences')
+    Navlinks(url='skills', label='Compétences' icon='text-box-check')
 
 </template>
 

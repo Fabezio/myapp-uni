@@ -1,8 +1,10 @@
 <template lang="pug">
 div
-  nuxt-link(:to='`/${url}`')
-    v-chip.mr-2(rounded)
-      | {{label}}
+  nuxt-link.route(:to='`/${url}`')
+    v-chip.mr-2(medium rounded)
+      v-avatar.avatar.ml-n1(size='36' color='')
+        v-icon(size="16") mdi-{{icon}}
+      span.ml-1 {{label}}
 
 
 </template>
@@ -17,9 +19,16 @@ export default {
     label: {
       type: String,
       default: 'Accueil'
+    },
+    icon: {
+      type: String,
+      default: 'home'
     }
   }
 }
 </script>
 
-<style lang="stylus" scoped></style>
+<style lang="stylus" scoped>
+.nuxt-link-exact-active .avatar
+  background-color teal !important
+</style>
