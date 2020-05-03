@@ -16,7 +16,7 @@ div
             v-icon(slot='prepend') mdi-keyboard
           v-checkbox(v-model='checkbox' label='je jure avoir dit la vérité')
 
-          v-alert(type='warning' color='grey') Tous les champs sont requis
+          v-alert(type='info' color='') Tous les champs sont requis
 
 
           // groupe d'actions
