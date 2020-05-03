@@ -7,11 +7,10 @@ v-app-bar(app dark="handleTheme" flat tile)
     Navlinks(url='contact', label='Contactez-moi!' icon='pen')
     v-spacer
     v-btn(@click='toggleTheme', color='info') {{theme}}
-    v-chip(v-if="" @click="showClock")
-      v-avatar
+    div.timer.ml-2(@click="toggleTimer = !toggleTimer")
+      v-avatar(v-if="!toggleTimer" )
         v-icon mdi-clock
-    v-chip(@click="showClock") {{hour}}:{{min}}
-
+      span(v-else) {{hour < 10 ? '0' : '' + hour}}:{{min}}
 
 </template>
 
@@ -20,8 +19,9 @@ export default {
   data() {
     return {
       theme: 'sombre',
+      hour: new Date().getHours(),
       min: new Date().getMinutes(),
-      hour: new Date().getHours()
+      toggleTimer: false
     }
   },
   methods: {
@@ -41,5 +41,6 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-//
+.timer
+  width 5rem
 </style>

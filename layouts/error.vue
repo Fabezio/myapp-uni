@@ -22,7 +22,7 @@ export default {
   data() {
     return {
       pageNotFound: '404 - Page non trouvée',
-      otherError: 'Une erreur st survenue'
+      otherError: 'Une erreur est survenue'
     }
   },
   head() {
