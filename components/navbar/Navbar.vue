@@ -5,6 +5,7 @@ v-app-bar(app dark flat tile)
     //- v-spacer
     Navlinks
     Navlinks(url='skills', label='Compétences' icon='text-box-check')
+    Navlinks(url='contact', label='Contactez-moi!' icon='pen')
 
 </template>
 

@@ -2,10 +2,9 @@
 v-app
   Navbar
   v-content
-    v-container(fill-height fluid)
-      v-row
-        v-col
-          nuxt
+    v-container()
+      nuxt
+
   Footer
 
 </template>
